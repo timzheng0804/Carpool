@@ -1,5 +1,6 @@
 package github.io.carpool;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,19 +26,26 @@ public class PhoneVerifyActivity extends AppCompatActivity {
         bt_send_vcode = findViewById(R.id.bt_send_vcode);
         bt_next = findViewById(R.id.bt_verify_next);
 
-
         send_verification_code();
+        next_button_onClick();
+    }
 
+    private void next_button_onClick() {
+        bt_next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), RegistrationActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     void send_verification_code() {
         bt_send_vcode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+
             }
         });
     }
-
-
 }
