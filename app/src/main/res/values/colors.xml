@@ -2,7 +2,9 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorTheme">#ede334</color>
+    <color name="colorProgress">#FF4081</color>
+    <color name="colorTheme">#fbdd40</color>
+    <color name="colorFont">#272727</color>
     <color name="colorTransparent">#00000000</color>
+    <color name="colorloading">@android:color/darker_gray</color>
 </resources>

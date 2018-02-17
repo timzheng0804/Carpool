@@ -1,0 +1,53 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/leo2"
+            android:text="@string/section1"
+            android:buttonTint="@color/colorPrimaryDark"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/leo2"
+            android:text="@string/section2"
+            android:buttonTint="@color/colorPrimaryDark"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/section_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/section_login"
+        android:theme="@style/LoginPageButton" />
+
+    <ProgressBar
+        android:id="@+id/car_regis_progress"
+        style="@style/MyProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

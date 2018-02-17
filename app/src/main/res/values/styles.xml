@@ -5,14 +5,19 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorTheme</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorProgress</item>
     </style>
 
     <style name="LoginEditTextLabel" parent="TextAppearance.AppCompat">
         <item name="android:textSize">18sp</item>
         <item name="android:textColorHint">@android:color/darker_gray</item>
         <item name="colorAccent">@android:color/white</item>
-        <item name="colorControlActivated">@color/colorTheme</item>
+        <item name="colorControlActivated">@color/colorFont</item>
+    </style>
+
+    <style name="RegisPhoneTextLabel">
+        <item name="android:paddingTop">0sp</item>
+        <item name="android:layout_marginTop">0sp</item>
     </style>
 
     <style name="LoginPageButton">
@@ -20,8 +25,32 @@
     </style>
 
     <style name="forgetButton">
-        <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/colorTheme</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorFont</item>
+    </style>
+
+    <style name="getCode">
+        <item name="android:textSize">12sp</item>
+    </style>
+    
+    <style name="MyProgressBar" parent="Base.Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateTint">@color/colorProgress</item>
+        <item name="android:indeterminateTintMode">src_atop</item>
+        <item name="android:top">10dp</item>
+    </style>
+
+    <style name="getSection">
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="navbar_button">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@string/hint_phone</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">11sp</item>
     </style>
 
 </resources>

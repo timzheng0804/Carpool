@@ -18,6 +18,11 @@
         </activity>
         <activity android:name=".PhoneVerifyActivity" />
         <activity android:name=".RegistrationActivity"></activity>
+        <activity android:name=".ForgetPhoneVerifyActivity"></activity>
+        <activity android:name=".ChangePassActivity"></activity>
+        <activity android:name=".indexActivity"></activity>
+        <activity android:name=".RegistrationSection"></activity>
+        <activity android:name=".GetCarInfoActivity"></activity>
     </application>
 
 </manifest>

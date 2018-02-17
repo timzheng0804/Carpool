@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="github.io.carpool.GetCarInfoActivity"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    >
+
+
+    <Spinner
+        android:id="@+id/car_type_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/car_type_array"
+        android:prompt="@string/spinner_type" />
+
+
+    <Spinner
+        android:id="@+id/car_color_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/car_color_array"
+        android:prompt="@string/spinner_color"
+        android:layout_marginTop="10dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/other_car_till_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/LoginEditTextLabel">
+
+        <EditText
+            android:id="@+id/other_car_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/car_model"
+            android:imeOptions="actionNext"
+            android:inputType="textCapCharacters"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:layout_marginTop="25dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/car_regis_next_final"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTheme"
+        android:text="@string/car_regis_bt"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        />
+
+    <ProgressBar
+        android:id="@+id/car_regis_progress"
+        style="@style/MyProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+</LinearLayout>

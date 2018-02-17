@@ -1,9 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="github.io.carpool.RegistrationActivity">
+    tools:context="github.io.carpool.ChangePassActivity"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    >
 
-</android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/new_til_account_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/LoginEditTextLabel">
+
+        <EditText
+            android:id="@+id/new_edit_account_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/new_edit_account_name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/new_til_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/LoginEditTextLabel">
+
+        <EditText
+            android:id="@+id/new_edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_new_pass_bt"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/regis_til_phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/RegisPhoneTextLabel">
+
+        <EditText
+            android:id="@+id/regis_edit_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:text="@string/test_phone" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/school_til_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/LoginEditTextLabel">
+
+        <EditText
+            android:id="@+id/school_edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/school_edit_name"
+            android:imeOptions="actionNext"
+            android:inputType="textAutoComplete"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/regis_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorTheme"
+        android:text="@string/regis_next"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/in_progress"
+        style="@style/MyProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+</LinearLayout>
