@@ -8,16 +8,46 @@
         <item name="colorAccent">@color/colorProgress</item>
     </style>
 
+    <style name="loginTitleButton">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingLeft">45dp</item>
+        <item name="android:paddingRight">45dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="buttonswrap">
+        <item name="android:paddingLeft">40dp</item>
+        <item name="android:paddingRight">40dp</item>
+    </style>
+
+    <style name="logintext">
+        <item name="android:color">@color/colorFont</item>
+        <item name="android:textSize">60sp</item>
+    </style>
+
     <style name="LoginEditTextLabel" parent="TextAppearance.AppCompat">
-        <item name="android:textSize">18sp</item>
-        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColorHint">@color/colorhint</item>
         <item name="colorAccent">@android:color/white</item>
-        <item name="colorControlActivated">@color/colorFont</item>
+        <item name="colorControlActivated">@color/colorDarkBlue</item>
+    </style>
+
+    <style name="textwithicon">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="loginpagewrap">
+        <item name="android:paddingLeft">17sp</item>
+        <item name="android:paddingRight">17sp</item>
     </style>
 
     <style name="RegisPhoneTextLabel">
         <item name="android:paddingTop">0sp</item>
         <item name="android:layout_marginTop">0sp</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="colorControlActivated">@color/colorFont</item>
     </style>
 
     <style name="LoginPageButton">
@@ -31,10 +61,11 @@
 
     <style name="getCode">
         <item name="android:textSize">12sp</item>
+        <item name="android:colorControlActivated">@color/colorhint</item>
     </style>
     
     <style name="MyProgressBar" parent="Base.Widget.AppCompat.ProgressBar">
-        <item name="android:indeterminateTint">@color/colorProgress</item>
+        <item name="android:indeterminateTint">@color/colorPrimary</item>
         <item name="android:indeterminateTintMode">src_atop</item>
         <item name="android:top">10dp</item>
     </style>

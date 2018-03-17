@@ -1,6 +1,216 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp">
 
-</android.support.constraint.ConstraintLayout>
+    <RatingBar
+        android:id="@+id/profile_ratingBar"
+        android:numStars="5"
+        android:rating="@string/profile_rate"
+        android:stepSize="0.1"
+        android:isIndicator="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_ratingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="30dp"
+        android:id="@+id/level_1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_setting_user_name" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/profile_til_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/RegisPhoneTextLabel">
+
+            <EditText
+                android:id="@+id/profile_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="textCapCharacters"
+                android:maxLines="1"
+                android:text="@string/profile_setting_name" />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/level_1"
+        android:layout_marginTop="20dp"
+        android:id="@+id/level_2"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_phone_hint" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/profile_til_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/RegisPhoneTextLabel">
+
+            <EditText
+                android:id="@+id/profile_phone_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:text="@string/test_phone" />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/level_2"
+        android:layout_marginTop="20dp"
+        android:id="@+id/level_3"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_car_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_car_type" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/profile_til_car_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/RegisPhoneTextLabel">
+
+            <EditText
+                android:id="@+id/profile_car_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:text="@string/profile_setting_car_type" />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/level_3"
+        android:layout_marginTop="20dp"
+        android:id="@+id/level_4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_car_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_car_color" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/profile_til_car_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/RegisPhoneTextLabel">
+
+            <EditText
+                android:id="@+id/profile_car_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:text="@string/profile_setting_car_color" />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/level_4"
+        android:layout_marginTop="20dp"
+        android:id="@+id/level_5"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_plate_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_plate_number" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/profile_til_plate_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/RegisPhoneTextLabel">
+
+            <EditText
+                android:id="@+id/profile_plate_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="textCapCharacters"
+                android:maxLines="1"
+                android:text="@string/profile_setting_car_plate_number" />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/profile_save_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/level_5"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorTheme"
+        android:text="@string/profile_change"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/profile_save_progress"
+        android:layout_below="@+id/profile_save_next"
+        android:layout_marginTop="10dp"
+        style="@style/MyProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

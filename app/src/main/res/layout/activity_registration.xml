@@ -7,9 +7,16 @@
     android:layout_height="match_parent"
     tools:context="github.io.carpool.ChangePassActivity"
     android:orientation="vertical"
-    android:layout_margin="10dp"
+    android:background="@drawable/loginbg"
+    android:focusableInTouchMode="true"
+    android:id="@+id/wrapper_bg_regis"
     >
 
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/new_til_account_name"
@@ -23,7 +30,9 @@
             android:layout_height="wrap_content"
             android:hint="@string/new_edit_account_name"
             android:imeOptions="actionNext"
+            android:drawableStart="@drawable/icon_phone"
             android:inputType="text"
+            android:theme="@style/textwithicon"
             android:maxLines="1" />
     </android.support.design.widget.TextInputLayout>
 
@@ -39,8 +48,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/enter_new_pass_bt"
+            android:drawableStart="@drawable/icon_pass"
             android:imeOptions="actionNext"
             android:inputType="textPassword"
+            android:theme="@style/textwithicon"
             android:maxLines="1" />
     </android.support.design.widget.TextInputLayout>
 
@@ -57,6 +68,8 @@
             android:imeOptions="actionNext"
             android:inputType="phone"
             android:maxLines="1"
+            android:theme="@style/textwithicon"
+            android:drawableStart="@drawable/icon_contact"
             android:text="@string/test_phone" />
 
     </android.support.design.widget.TextInputLayout>
@@ -73,6 +86,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/school_edit_name"
             android:imeOptions="actionNext"
+            android:drawableStart="@drawable/icon_location"
+            android:theme="@style/textwithicon"
             android:inputType="textAutoComplete"
             android:maxLines="1" />
     </android.support.design.widget.TextInputLayout>
@@ -81,8 +96,9 @@
         android:id="@+id/regis_next"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorTheme"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundshape"
+        android:theme="@style/loginTitleButton"
         android:text="@string/regis_next"
         android:visibility="visible" />
 
@@ -92,5 +108,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="invisible"/>
-
+    </LinearLayout>
 </LinearLayout>

@@ -7,4 +7,12 @@
     <color name="colorFont">#272727</color>
     <color name="colorTransparent">#00000000</color>
     <color name="colorloading">@android:color/darker_gray</color>
+    <color name="colorhint">#707B7C</color>
+    <color name="colorDarkBlue">#212F3D</color>
+    <color name="colorLightBlue">#85C1E9</color>
+    <color name="colorLightYellow">#F9E79F</color>
+    <color name="colorLightGrey">#F2F3F4</color>
+    <color name="jiangred">#F3C2EC</color>
+    <color name="colorBlueD">#07098D</color>
+    <color name="colorredD">#A8070A</color>
 </resources>
